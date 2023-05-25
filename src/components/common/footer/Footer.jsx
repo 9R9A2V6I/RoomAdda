@@ -9,6 +9,7 @@ import "./footer.css"
 
 
 const Footer = () => {
+  console.log("MAnish")
   return (
     <>
       <section className='footerContact'>
