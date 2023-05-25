@@ -1,11 +1,13 @@
 import React from "react"
 import { footer } from '../../data/Data'
-import IMG from '../../../Assets/Images/IMG-20230523-WA0001.jpg'
-import Insta from '../../../Assets/Images/IMG-20230523-WA0002.jpg'
-import Facebook from '../../../Assets/Images/IMG-20230523-WA0003.jpg'
-import Git  from '../../../Assets/Images/IMG-20230523-WA0004.jpg'
-import "./footer.css"
+// import IMG from './Room.png'
+import { FaFacebookSquare } from 'react-icons/fa';
+import { AiOutlineInstagram} from 'react-icons/ai';
+import {AiFillGithub} from 'react-icons/ai';
+import{AiFillYoutube} from 'react-icons/ai'
 
+// import Git  from './github (1).png'
+import "./footer.css"
 
 
 const Footer = () => {
@@ -15,8 +17,9 @@ const Footer = () => {
         <div className='container'>
           <div className='send flex'>
             <div className='text'>
-              <h1>Do You Have Questions ?</h1>
-              <p>We'll help you to grow your career and growth.</p>
+              <h4>RoomAdaa will give you 24*7 service any problem contact us</h4>
+              <br></br>
+              <p>Thank You for visting on RoomAdaa.</p>
             </div>
             <button className='btn5'>Contact Us Today</button>
           </div>
@@ -27,7 +30,7 @@ const Footer = () => {
         <div className='container'>
           <div className='box'>
             <div className='logo'>
-              <img src={IMG} alt="" />
+              {/* <img src={IMG} alt="" /> */}
             
               
               <h2>Do You Need Help With Anything?</h2>
@@ -39,9 +42,15 @@ const Footer = () => {
                 
               </div>
               <div className="SocialMedia">
-                <img src={Insta} alt="" className="Social-Media"/>
-                <img src={Facebook} alt="" className="Social-Media"/>
-                <img src={Git} alt="" className="Social-Media"/>
+                {/* <img src={Insta} alt="" className="Social-Media"/> */}
+                {/* <img src={Facebook} alt="" className="Social-Media"/> */}
+                {/* <img src={Git} alt="" className="Social-Media"/> */}
+                <div className="reactIcon">
+                <FaFacebookSquare  color="white" fontSize="2em"/>
+                <AiOutlineInstagram color="white" fontSize="2em"/>
+                <AiFillGithub color="white" fontSize="2em"/>
+                <AiFillYoutube color="white" fontSize="2em"/>
+                </div>
 
                 
 
@@ -63,10 +72,10 @@ const Footer = () => {
         </div>
       </footer>
       <div className='legal'>
-        <span>© 2023 RoomAadaa.</span>
+        <span>© 2023 RoomAadaa Technologies Solution Pvt. Ltd.</span>
       </div>
     </>
   )
 }
 
-export default Footer
+export default Footer
